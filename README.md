@@ -16,6 +16,10 @@ module.exports = {
 @tailwind components;
 @tailwind utilities;
 ---------------
+- Build Header
+- Login form
+- 
+---------------
 ## Project planning features :
 Login and signup page
   - login and signup form
