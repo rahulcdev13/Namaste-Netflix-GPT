@@ -35,7 +35,33 @@ Below Implemented point
 - Created a redux store with user slice
 - Implemented sign out
 - Update profile
+## BugFixes :
+  - Sign Up User DisplayName and profile picture Update
+  - if user not login Redirect user to login page and vice versa
+- Unsubscribed to the onAuthStateChanged callback 
+- All hardcoded values add in constant file.
 
+## Lets building our application
+  - Fetch APi from TMDB Moview 
+  - Geta data from TMDB now playing movies list API
+  - craete movieSlice and put inside moview data
+  - Creating a custome hooks for extract the code this ia good way
+  - Update store with movies data
+   
+## Plannig to Bulding the Browse page 
+  Frist design Structue of the browse page
+    mainContainer
+      - Videobackground
+      - VideoTitle
+    SecondaryContainer
+      - Movielist * n
+      -  cards * n   
+- Fetch data for traile videos
+- Create custome hook for traile video
+- Update store with trailer video data
+- Embedded the youtube video and make it autoplay and mute
+- tailwind css added for main container look awesome
+- 
 ## Deployment setup firebase :
 Create project with firebase and hosting also :
 https://console.firebase.google.com/u/0/project/namastenetflixgpt/overview
@@ -49,8 +75,8 @@ https://console.firebase.google.com/u/0/project/namastenetflixgpt/overview
 ## Project planning features :
 Login and signup page
   - login and signup form
-  - after login go to browser page.
-Browser [ after authotications ]
+  - after login go to Browse page.
+Browse [ after authotications ]
   - Header
   - Main Movie
       - Trailr in background

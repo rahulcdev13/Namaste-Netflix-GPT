@@ -1,18 +1,19 @@
 import React from "react";
+import { error_page_img, netflix_logo } from "../constant/Constant";
 
 const Error = () => {
   return (
     <div>
-      <div className="absolute  w-screen px-8 bg-black z-10 flex justify-between">
+      <div className="absolute  w-screen px-8 bg-gradient-to-b from-black z-10 flex justify-between">
         <img
           className="w-48"
-          src="./assets/images/Netflix_Logo.png"
+          src={netflix_logo}
           alt="header-logo"
         />
       </div>
       <div className="absolute">
         <img
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/855ed6e2-d9f1-4afd-90da-96023ec747c3/85eb5b91-25ed-4965-ace9-ba8e4a0ead8d/IN-en-20230828-popsignuptwoweeks-perspective_alpha_website_large.jpg"
+          src={error_page_img}
           alt="login-bgimg"
           className="bg-gradient-to-b from-black"
         />

@@ -7,15 +7,13 @@ import {
   updateProfile,
 } from "firebase/auth";
 import { auth } from "../firebase/FirebaseConfig";
-import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../redux/userSlice";
-
+import { login_bgimage_page, user_avatar } from "../constant/Constant";
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
-  const navigate = useNavigate();
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   const toggleSignIn = () => {
     setIsSignInForm(!isSignInForm);
@@ -38,10 +36,10 @@ const Login = () => {
       )
         .then((userCredential) => {
           const user = userCredential.user;
-          console.log(user);
+          // console.log(user);
           updateProfile(user, {
             displayName: name.current.value,
-            photoURL: "https://avatars.githubusercontent.com/u/105979644?v=4",
+            photoURL: user_avatar,
           })
             .then(() => {
               const { uid, email, displayName, photoURL } = auth.currentUser;
@@ -53,11 +51,9 @@ const Login = () => {
                   photoURL: photoURL,
                 })
               );
-              // Once Profile updated!
-              navigate("/browser");
             })
             .catch((error) => {
-              setErrorMessage(error.message)
+              setErrorMessage(error.message);
             });
         })
         .catch((error) => {
@@ -75,7 +71,6 @@ const Login = () => {
         .then((userCredential) => {
           const user = userCredential.user;
           console.log(user);
-          navigate("/browser");
         })
         .catch((error) => {
           const errorCode = error.code;
@@ -89,10 +84,7 @@ const Login = () => {
     <div>
       <Header />
       <div className="absolute">
-        <img
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/855ed6e2-d9f1-4afd-90da-96023ec747c3/85eb5b91-25ed-4965-ace9-ba8e4a0ead8d/IN-en-20230828-popsignuptwoweeks-perspective_alpha_website_large.jpg"
-          alt="login-bgimg"
-        />
+        <img src={login_bgimage_page} alt="login-bgimg" />
       </div>
       <div>
         <form
