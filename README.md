@@ -61,7 +61,15 @@ Below Implemented point
 - Update store with trailer video data
 - Embedded the youtube video and make it autoplay and mute
 - tailwind css added for main container look awesome
-- 
+- Build the secondary Componnet
+- Show the movie lists
+- Build Movie card
+- Movie image CDN URL build api 
+- made the browse page amazing with tailwind css
+- Suggestion movie with sliderleftt-right vice-versa
+
+
+
 ## Deployment setup firebase :
 Create project with firebase and hosting also :
 https://console.firebase.google.com/u/0/project/namastenetflixgpt/overview
