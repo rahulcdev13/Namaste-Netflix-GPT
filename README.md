@@ -67,7 +67,9 @@ Below Implemented point
 - Movie image CDN URL build api 
 - made the browse page amazing with tailwind css
 - Suggestion movie with sliderleftt-right vice-versa
-
+- Get GPT Searchbar
+- **Multilanguage features in our app
+- 
 
 
 ## Deployment setup firebase :

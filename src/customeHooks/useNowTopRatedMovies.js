@@ -11,7 +11,6 @@ const useNowTopRatedMovies = () => {
     const getNowTopratedMovies = async () => {
       const data = await fetch(POPULAR_MOVIE_API); 
       const json = await data.json();
-      console.log(json.results);
       dispatch(addNowTopRatedMovies(json.results));
     };
     getNowTopratedMovies();
