@@ -68,9 +68,10 @@ Below Implemented point
 - made the browse page amazing with tailwind css
 - Suggestion movie with sliderleftt-right vice-versa
 - Get GPT Searchbar
-- **Multilanguage features in our app
+- **Multilanguage features in our app [Bonus Part]
+- Create Openai api key 
+- npm install --save openai
 - 
-
 
 ## Deployment setup firebase :
 Create project with firebase and hosting also :

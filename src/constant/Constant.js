@@ -15,7 +15,8 @@ export const TOP_RATED_MOVIE_API = `https://api.themoviedb.org/3/movie/top_rated
 export const UPCOMMING_MOVIE_API = `https://api.themoviedb.org/3/movie/upcoming?api_key=${myAPIKEY}`;
 
 export const TVLIST_API = "https://api.themoviedb.org/3/tv/changes?page=1";
-// API Key: bbea869c54206a9000a50eb5074a2b43
+export const GPT_OPENAI_KEY = "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";
+
 
 // export const API_OPTIONS = {
 //   method: "GET",
