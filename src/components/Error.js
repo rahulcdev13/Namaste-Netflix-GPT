@@ -1,5 +1,6 @@
 import React from "react";
 import { error_page_img, netflix_logo } from "../constant/Constant";
+import { Link } from "react-router-dom";
 
 const Error = () => {
   return (
@@ -25,7 +26,7 @@ const Error = () => {
           home page.
         </p>
         <button className="border border-gray-400 my-4 bg-white text-black p-3 rounded-lg">
-          Netflix Home
+          <Link to='/'>Netflix Home</Link>  
         </button>
         <p className="font-bold text-xl my-4">Error Code NSES-404</p>
       </div>

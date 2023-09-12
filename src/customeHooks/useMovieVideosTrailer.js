@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { myAPIKEY } from "../constant/Constant";
+import { MY_API_KEY } from "../constant/Constant";
 import { useDispatch } from "react-redux";
 import { addMoviesTrailer } from "../redux/moviesSlice";
 
@@ -8,7 +8,7 @@ import { addMoviesTrailer } from "../redux/moviesSlice";
 const useMovieVideosTrailer = (movieId) => {
   // const [traileId,setTrailerId] = useState();
   const dispatch = useDispatch();
-  const MOVIE_VIDEO_API = `https://api.themoviedb.org/3/movie/${movieId}}/videos?api_key=${myAPIKEY}`;
+  const MOVIE_VIDEO_API = `https://api.themoviedb.org/3/movie/${movieId}}/videos?api_key=${MY_API_KEY}`;
 
   useEffect(() => {
     const getMovieVideo = async () => {

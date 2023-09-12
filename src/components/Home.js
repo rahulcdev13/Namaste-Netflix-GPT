@@ -3,6 +3,7 @@ import Login from "./Login";
 import Browse from "./Browse";
 import { RouterProvider,createBrowserRouter } from "react-router-dom";
 import Error from "./Error";
+import MovieDetails from "./MovieDetails";
 
 const Home = () => {
   const appRouter = createBrowserRouter([
@@ -17,6 +18,10 @@ const Home = () => {
     {
       path: "*",
       element: <Error />,
+    },
+    {
+      path: "/movieDetails",
+      element: <MovieDetails />,
     },
   ]);
 

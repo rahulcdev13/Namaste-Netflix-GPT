@@ -7,10 +7,12 @@ import useNowUpcommingMovies from "../customeHooks/useNowUpcommingMovies";
 import Header from "./Header";
 import MainContainer from "./MainContainer";
 import SecondaryContainer from "./SecondaryContainer";
+// import MovieDetails from "./MovieDetails";
 
 const Browse = () => {
   // Custome hook is here
   const showGtpPage = useSelector((store) => store.gpt.showGptSearch);
+  // const showMovieDetails = useSelector((store)=>store.movieInfo.showMovieInfo)
 
   useNowPlayingMovies();
   useNowPopularMovies();
@@ -19,6 +21,7 @@ const Browse = () => {
   return (
     <div>
       <Header />
+      {/* {showMovieDetails ? <MovieDetails /> : ""} */}
       {showGtpPage ? (
         <GptSearch />
       ) : (

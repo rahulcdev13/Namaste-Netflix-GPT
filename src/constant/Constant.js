@@ -8,15 +8,14 @@ export const login_bgimage_page ="https://assets.nflxext.com/ffe/siteui/vlv3/855
 export const MOVIE_CARD_IMG_URL = "https://image.tmdb.org/t/p/w400/";
 
 // ========================== ALL API ===================================
-export const myAPIKEY = "bbea869c54206a9000a50eb5074a2b43";
-export const PLAYING_MOVIE_API = `https://api.themoviedb.org/3/movie/now_playing?api_key=${myAPIKEY}`;
-export const POPULAR_MOVIE_API = `https://api.themoviedb.org/3/movie/popular?api_key=${myAPIKEY}`;
-export const TOP_RATED_MOVIE_API = `https://api.themoviedb.org/3/movie/top_rated?api_key=${myAPIKEY}`;
-export const UPCOMMING_MOVIE_API = `https://api.themoviedb.org/3/movie/upcoming?api_key=${myAPIKEY}`;
+export const MY_API_KEY =process.env.REACT_APP_MY_APIKEY
+export const PLAYING_MOVIE_API = `https://api.themoviedb.org/3/movie/now_playing?api_key=${MY_API_KEY}`;
+export const POPULAR_MOVIE_API = `https://api.themoviedb.org/3/movie/popular?api_key=${MY_API_KEY}`;
+export const TOP_RATED_MOVIE_API = `https://api.themoviedb.org/3/movie/top_rated?api_key=${MY_API_KEY}`;
+export const UPCOMMING_MOVIE_API = `https://api.themoviedb.org/3/movie/upcoming?api_key=${MY_API_KEY}`;
 
 export const TVLIST_API = "https://api.themoviedb.org/3/tv/changes?page=1";
-export const GPT_OPENAI_KEY = "";
-
+export const OPENAI_API_KEY=process.env.REACT_APP_GPT_OPENAI_KEY
 
 // export const API_OPTIONS = {
 //   method: "GET",
